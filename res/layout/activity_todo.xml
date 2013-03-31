@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"     
+    >
+    
+    <LinearLayout
+        android:focusable="true" 
+        android:focusableInTouchMode="true"
+        android:layout_width="0px" 
+        android:layout_height="0px"/>
+ 
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:id="@+id/todo_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:completionThreshold="1"
+            android:imeOptions="flagNoExtractUi"
+            android:textColor="@android:color/black"
+            android:maxLength="70"
+            android:textSize="16sp" 
+            android:hint="@string/todohint"  
+            />
+        
+       <TextView
+	        android:layout_width="5dp" 
+	        android:layout_height="5dp"
+	        android:background="@color/white"/>
+
+        <Button
+            android:id="@+id/todo_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/todo_add"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"/>
+
+
+        
+     </LinearLayout>
+        
+     <ListView android:layout_width="fill_parent"   
+      android:layout_height="wrap_content"   
+      android:id="@+id/listview_todo"  
+      android:fadeScrollbars="false"
+      android:layout_marginLeft="-1245dp"
+     />    
+     
+      <Button
+	     android:id="@+id/todo_sync"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:text="sync"
+/>
+</LinearLayout>

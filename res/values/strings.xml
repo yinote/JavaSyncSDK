@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToDoExample</string>
+    <string name="todo">待办事项</string>
+    <string name="todohint">请输入...</string>
+    <string name="todopromption">输入框不能为空</string>
+    <string name="startdate">开始日期：</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="dataerrorpromption">初始化数据访问失败！</string>
+    <string name="tododatabasename">todo.db</string>
+    <string name="todotablename">todo</string>
+    <string name="syncinit">初始化同步失败！</string>
+    <string name="syncserverstate">获取服务器状态失败！</string>
+    <string name="syncserverupdate">同步服务器失败！</string>
+    <string name="synclocalupdate">上传差异失败！</string>
+    <string name="syncupdateflag">更新标志失败！</string>
+    <string name="syncserverchunk">获取服务器数据失败！</string>
+</resources>

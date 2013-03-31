@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yinote.android.todoexample"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="yinote.android.todoexample.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="yinote.android.todo.ToDoActivity"
+            android:label="ToDoActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        
+        <activity 
+            android:name="com.exina.android.calendar.CalendarActivity"
+            android:theme="@style/calenderstyle">        
+	        <intent-filter>
+	            <action android:name="android.intent.action.PICK" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <data android:mimeType="vnd.android.cursor.dir/vnd.exina.android.calendar.date" />
+	        </intent-filter>
+	        <intent-filter>
+	            <action android:name="android.intent.action.VIEW" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <data android:mimeType="vnd.android.cursor.dir/vnd.exina.android.calendar.date" />
+	        </intent-filter>
+    </activity>
+    
+    </application>
+
+</manifest>
